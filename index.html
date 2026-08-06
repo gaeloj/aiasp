@@ -1,19 +1,178 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-    <meta name="theme-color" content="#0a0a0a" />
-    <meta name="mobile-web-app-capable" content="yes" />
-    <meta name="apple-mobile-web-app-capable" content="yes" />
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
-    <meta name="apple-mobile-web-app-title" content="UniOn" />
-    <link rel="manifest" href="/manifest.json" />
-    <title>UniOn - Sistema de Gestão</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
-</html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AIASP - Associação Indígena Aldeia Serrota Pankararé</title>
 
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,Helvetica,sans-serif;
+}
+
+body{
+    background:#0f172a;
+    color:#fff;
+}
+
+header{
+    background:#111827;
+    padding:20px;
+    text-align:center;
+    border-bottom:3px solid #d4af37;
+}
+
+header h1{
+    color:#d4af37;
+}
+
+nav{
+    background:#1e293b;
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    padding:15px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+nav a:hover{
+    color:#d4af37;
+}
+
+.hero{
+    text-align:center;
+    padding:70px 20px;
+}
+
+.hero h2{
+    font-size:40px;
+    margin-bottom:20px;
+}
+
+.hero p{
+    max-width:700px;
+    margin:auto;
+    line-height:1.7;
+    color:#d1d5db;
+}
+
+.botoes{
+    margin-top:35px;
+}
+
+button{
+    background:#d4af37;
+    border:none;
+    padding:15px 35px;
+    border-radius:10px;
+    cursor:pointer;
+    font-size:18px;
+    margin:10px;
+}
+
+button:hover{
+    background:#facc15;
+}
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+    padding:40px;
+}
+
+.card{
+    background:#1e293b;
+    padding:25px;
+    border-radius:15px;
+    text-align:center;
+}
+
+.card h3{
+    color:#d4af37;
+    margin-bottom:15px;
+}
+
+footer{
+    background:#111827;
+    padding:20px;
+    text-align:center;
+    margin-top:40px;
+}
+</style>
+
+</head>
+<body>
+
+<header>
+<h1>AIASP</h1>
+<p>Associação Indígena Aldeia Serrota Pankararé</p>
+</header>
+
+<nav>
+<a href="#">Início</a>
+<a href="#">Associados</a>
+<a href="#">Financeiro</a>
+<a href="#">Documentos</a>
+<a href="#">Contato</a>
+</nav>
+
+<section class="hero">
+<h2>Bem-vindo ao Sistema AIASP</h2>
+
+<p>
+Sistema online para gerenciamento de associados, financeiro,
+documentos, cobranças e administração da Associação Indígena
+Aldeia Serrota Pankararé.
+</p>
+
+<div class="botoes">
+<button onclick="entrar()">Entrar no Sistema</button>
+</div>
+
+</section>
+
+<section class="cards">
+
+<div class="card">
+<h3>👥 Associados</h3>
+<p>Cadastro e gerenciamento dos membros.</p>
+</div>
+
+<div class="card">
+<h3>💰 Financeiro</h3>
+<p>Controle de receitas e despesas.</p>
+</div>
+
+<div class="card">
+<h3>📄 Documentos</h3>
+<p>Armazenamento de atas, estatutos e ofícios.</p>
+</div>
+
+<div class="card">
+<h3>🗳️ Assembleias</h3>
+<p>Organização e gestão das reuniões.</p>
+</div>
+
+</section>
+
+<footer>
+© 2026 AIASP - Todos os direitos reservados.
+</footer>
+
+<script>
+function entrar(){
+    alert("Sistema AIASP em desenvolvimento.");
+}
+</script>
+
+</body>
+</html>
